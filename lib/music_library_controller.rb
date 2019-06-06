@@ -1,6 +1,6 @@
 class MusicLibraryController
 
-  attr_accessor :path, :importer, :alphabetized_song_list
+  # attr_accessor :path, :importer, :alphabetized_song_list
 
   def initialize(path = './db/mp3s') # => initialization of optional path with file extension of the list of songs.
     MusicImporter.new(path).import  # => call MusicImporter class to create a new path of the songs to import.
